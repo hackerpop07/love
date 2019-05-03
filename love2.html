@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Em có yêu anh ko?</title>
+</head>
+<body>
+<h1 style="position: absolute; left: 500px; top: 180px;">Em có yêu anh không?</h1>
+<input id="yes" style="position: absolute; left: 530px; top: 250px;" type="button" value="YES" onclick="yes()">
+<input id="no" style="position: absolute; left: 580px; top: 250px;" type="button" value="No" onmouseover="no()">
+<script>
+  function yes() {
+    alert("Cảm ơn em! yêu em thật nhiều <3<3<3");
+  }
+
+  function no() {
+    let top = Math.round(Math.random() * window.innerWidth);
+    let left = Math.round(Math.random() * window.innerHeight);
+    document.getElementById("no").style.top = top + "px";
+    document.getElementById("no").style.left = left + "px";
+  }
+</script>
+</body>
+</html>
